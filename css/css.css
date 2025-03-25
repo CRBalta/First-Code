@@ -3,10 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+
+/* Encabezado con imagen de fondo */
 header {
     background: url(../img/header.jpg) no-repeat center center/cover;
     width: 100%;
@@ -18,12 +22,17 @@ header {
     text-align: center;
     padding: 20px;
 }
+
+/* Sección de proyectos */
 .contenido {
     padding: 40px 0;
 }
+
 h3 {
     margin-bottom: 30px;
 }
+
+/* Grid para organizar los proyectos */
 .proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,6 +42,8 @@ h3 {
     max-width: 80%;
     margin: 0 auto;
 }
+
+/* Cada proyecto es un círculo */
 .proyecto-item {
     width: 150px;
     height: 150px;
@@ -41,17 +52,22 @@ h3 {
     justify-content: center;
     border-radius: 50%;
 }
+
 .proyecto-item img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
+
+/* Sección de feedback con fondo de color */
 .feedback {
     background: #5ca4a9;
     color: white;
     padding: 20px;
     margin: 40px 0;
 }
+
+/* Contenedor de información */
 .info-container {
     display: flex;
     flex-direction: row;
@@ -60,24 +76,31 @@ h3 {
     margin: 0 auto;
     gap: 40px;
 }
+
 .texto {
     flex: 1;
     text-align: left;
 }
+
 .mapa {
     flex: 1;
 }
+
+/* Pie de página */
 footer {
     text-align: center;
     background-color: #939191;
     padding: 10px;
     font-size: 14px;
 }
+
+/* Estilo del h6 (parece no usarse correctamente en el código) */
 h6 {
     text-align: center;
     color: rgb(255, 255, 255);
 }
 
+/* Diseño responsivo para pantallas más pequeñas */
 @media (max-width: 900px) {
     .proyectos {
         grid-template-columns: repeat(2, 1fr);
@@ -87,6 +110,7 @@ h6 {
         text-align: center;
     }
 }
+
 @media (max-width: 600px) {
     .proyectos {
         grid-template-columns: repeat(1, 1fr);
